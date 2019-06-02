@@ -32,14 +32,26 @@ plugins:
 sass:
   style: compact # possible values: nested expanded compact compressed
 
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
+exclude:
+  - docker-compose.yml
+  - README.md
 #   - Gemfile.lock
 #   - node_modules
 #   - vendor/bundle/
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts"
+    values:
+      layout: "post"
+      excerpt_separator: <!--more-->
+      permalink: /blog/:year/:month/:day/:title/
