@@ -367,77 +367,20 @@ layout: default
           </div><!-- row -->
 
           <div class="row">
-            <div class="col-6 col-md-3 mb-4 mb-sm-5">
-              <a href="#" class="people-detail__ph"><img class="img-fluid" src="http://placehold.jp/300x300.png" alt="中津川篤司"></a>
-              <div class="people-detail p-2 p-sm-2">
-                <p class="people-detail__name text-white text-center mb-1">中津川篤司</p>
-                <p class="people-detail__links mb-0 text-center">
-                  <a href="#" target="_blank" class="text-white"><i class="fab fa-twitter-square"></i></a>
-                  <a href="#" target="_blank" class="text-white"><i class="fab fa-github-square"></i></a>
-                  <a href="#" target="_blank" class="text-white"><i class="fas fa-globe"></i></a>
-                </p>
-              </div><!-- people-detail -->
-            </div>
 
-            <div class="col-6 col-md-3 mb-4 mb-sm-5">
-              <a href="#" class="people-detail__ph"><img class="img-fluid" src="http://placehold.jp/300x300.png" alt="中津川篤司"></a>
-              <div class="people-detail p-2 p-sm-2">
-                <p class="people-detail__name text-white text-center mb-1">中津川篤司</p>
-                <p class="people-detail__links mb-0 text-center">
-                  <a href="#" target="_blank" class="text-white"><i class="fab fa-twitter-square"></i></a>
-                  <a href="#" target="_blank" class="text-white"><i class="fab fa-github-square"></i></a>
-                  <a href="#" target="_blank" class="text-white"><i class="fas fa-globe"></i></a>
-                </p>
-              </div><!-- people-detail -->
-            </div>
+              {% for member in site.data.organizers %}
+                <div class="col-6 col-md-3 mb-4 mb-sm-5">
+                    <a href="#" class="people-detail__ph"><img class="img-fluid" src="{{site.baseurl}}/assets/img/members/{{member.img}}.jpg" alt="{{member.name}}"></a>
+                    <div class="people-detail p-2 p-sm-2">
+                      <p class="people-detail__name text-white text-center mb-1">{{member.name}}</p>
+                      <p class="people-detail__links mb-0 text-center">
+                        <a href="https://github.com/{{member.github}}" target="_blank" class="text-white"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://twitter.com/{{member.twitter}}" target="_blank" class="text-white"><i class="fab fa-github-square"></i></a>
+                      </p>
+                    </div><!-- people-detail -->
+                  </div>
+                {% endfor %}
 
-            <div class="col-6 col-md-3 mb-4 mb-sm-5">
-              <a href="#" class="people-detail__ph"><img class="img-fluid" src="http://placehold.jp/300x300.png" alt="中津川篤司"></a>
-              <div class="people-detail p-2 p-sm-2">
-                <p class="people-detail__name text-white text-center mb-1">中津川篤司</p>
-                <p class="people-detail__links mb-0 text-center">
-                  <a href="#" target="_blank" class="text-white"><i class="fab fa-twitter-square"></i></a>
-                  <a href="#" target="_blank" class="text-white"><i class="fab fa-github-square"></i></a>
-                  <a href="#" target="_blank" class="text-white"><i class="fas fa-globe"></i></a>
-                </p>
-              </div><!-- people-detail -->
-            </div>
-
-            <div class="col-6 col-md-3 mb-4 mb-sm-5">
-              <a href="#" class="people-detail__ph"><img class="img-fluid" src="http://placehold.jp/300x300.png" alt="中津川篤司"></a>
-              <div class="people-detail p-2 p-sm-2">
-                <p class="people-detail__name text-white text-center mb-1">中津川篤司</p>
-                <p class="people-detail__links mb-0 text-center">
-                  <a href="#" target="_blank" class="text-white"><i class="fab fa-twitter-square"></i></a>
-                  <a href="#" target="_blank" class="text-white"><i class="fab fa-github-square"></i></a>
-                  <a href="#" target="_blank" class="text-white"><i class="fas fa-globe"></i></a>
-                </p>
-              </div><!-- people-detail -->
-            </div>
-
-            <div class="col-6 col-md-3 mb-4 mb-sm-5">
-              <a href="#" class="people-detail__ph"><img class="img-fluid" src="http://placehold.jp/300x300.png" alt="中津川篤司"></a>
-              <div class="people-detail p-2 p-sm-2">
-                <p class="people-detail__name text-white text-center mb-1">中津川篤司</p>
-                <p class="people-detail__links mb-0 text-center">
-                  <a href="#" target="_blank" class="text-white"><i class="fab fa-twitter-square"></i></a>
-                  <a href="#" target="_blank" class="text-white"><i class="fab fa-github-square"></i></a>
-                  <a href="#" target="_blank" class="text-white"><i class="fas fa-globe"></i></a>
-                </p>
-              </div><!-- people-detail -->
-            </div>
-
-            <div class="col-6 col-md-3 mb-4 mb-sm-5">
-              <a href="#" class="people-detail__ph"><img class="img-fluid" src="http://placehold.jp/300x300.png" alt="中津川篤司"></a>
-              <div class="people-detail p-2 p-sm-2">
-                <p class="people-detail__name text-white text-center mb-1">中津川篤司</p>
-                <p class="people-detail__links mb-0 text-center">
-                  <a href="#" target="_blank" class="text-white"><i class="fab fa-twitter-square"></i></a>
-                  <a href="#" target="_blank" class="text-white"><i class="fab fa-github-square"></i></a>
-                  <a href="#" target="_blank" class="text-white"><i class="fas fa-globe"></i></a>
-                </p>
-              </div><!-- people-detail -->
-            </div>
           </div><!-- row -->
           </div><!-- container-fluid -->
         </div><!-- /fluid_extend -->
