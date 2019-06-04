@@ -3,6 +3,6 @@ services:
     site:
         image: starefossen/github-pages:172
         volumes:
-            - /Users/hikarumaruyama/src/github.com/hmaruyama/jekyll-test:/usr/src/app
+            - "${YOUR_WORK_DIR}:/usr/src/app"
         ports:
             - 4000:4000
